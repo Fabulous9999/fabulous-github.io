@@ -1,6 +1,5 @@
 * {
     background: linear-gradient(to left, rgb(8, 5, 5), rgb(22, 10, 22));
-    /* background: rgb(0, 0, 0); */
     color: white;
     padding: 0;
     margin: 0;
@@ -40,10 +39,14 @@
     cursor: pointer;
     color: rgb(255, 255, 255);
     padding: .25rem .75rem;
-    font-weight: medium;
+    font-weight: bold;
     border-radius: .5rem;
-    text-decoration-style: none;
     background: rgb(97, 36, 97);
+}
+
+.work__item:hover {
+    background-color: crimson;
+    color: black;
 }
 
 .work__card{
@@ -51,10 +54,15 @@
     padding: 1rem;
     border-radius: 1rem;
     border: 1px solid white;
+    box-shadow: 2px 2px 5px blue;
+    margin-left: 2vw;
+    margin-right: 2vw;
 }
 
 .work__card:hover {
     opacity: 0.5;
+    transform: scale(1.05);
+    transition: .4s ease-in-out;
 }
 
 .work__img {
@@ -63,8 +71,8 @@
 }
 
 .work__title {
-    font-size: normal;
-    font-weight: medium;
+    font-size: large;
+    font-weight: bold;
     margin: 5px;
     background: transparent;
     
@@ -85,7 +93,6 @@
 
 .work__icon {
     font-size: 1rem;
-    transition: .5s;
 }
 
 .active-work {
@@ -99,7 +106,19 @@
     gap: 10px;
     align-content: center;
     row-gap: 40px;
+    justify-content: space-between;
 }
+
+/* .grid {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.work__card {
+    width: 500px;
+} */
 
 @media (max-width: 768px) {
     .grid {
